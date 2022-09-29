@@ -5,7 +5,7 @@ services:
     image: strm/dnsmasq
     volumes:
       - ./dnsmasq.conf:/etc/dnsmasq.conf
-      - ./hosts-dnsmasq:/etc/hosts-dnsmasq
+      - ./hosts-dnsmasq1:/etc/hosts-dnsmasq
     ports:
       - "53:53/udp"
     cap_add:
